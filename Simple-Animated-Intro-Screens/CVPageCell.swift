@@ -16,17 +16,18 @@ class CVPageCell: UICollectionViewCell {
     let secondaryLabel = UILabel()
     let labelView = UIView()
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        configureAnimatedView(nameOfAnimation: "thinking")
-        configureLabelView()
-        configurePrimaryLabel()
-        configureSecondaryLabel()
+    var page: Page? {
+        didSet {
+            guard let page = page else { return }
+            
+            configureAnimatedView(nameOfAnimation: page.animatedImage)
+            primaryLabel.text = page.title
+            secondaryLabel.text = page.message
+        }
     }
     
-    init(nameOfAnimation: String) {
-        super.init(frame: .zero)
-        configureAnimatedView(nameOfAnimation: nameOfAnimation)
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         configureLabelView()
         configurePrimaryLabel()
         configureSecondaryLabel()

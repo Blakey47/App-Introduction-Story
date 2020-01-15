@@ -16,6 +16,9 @@
 		027C0B9D23CE790900600A4C /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 027C0B9C23CE790900600A4C /* Lottie */; };
 		028FCDB423CF3177004194DF /* thinking.json in Resources */ = {isa = PBXBuildFile; fileRef = 028FCDB323CF3177004194DF /* thinking.json */; };
 		028FCDB923CF4E8B004194DF /* CVPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028FCDB823CF4E8B004194DF /* CVPageCell.swift */; };
+		028FCDBB23CF7763004194DF /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028FCDBA23CF7763004194DF /* Page.swift */; };
+		028FCDBD23CF78E3004194DF /* at-office.json in Resources */ = {isa = PBXBuildFile; fileRef = 028FCDBC23CF78E3004194DF /* at-office.json */; };
+		028FCDBF23CF7C90004194DF /* success.json in Resources */ = {isa = PBXBuildFile; fileRef = 028FCDBE23CF7C90004194DF /* success.json */; };
 		D44037DA6930A2F274CAD477 /* Pods_Simple_Animated_Intro_Screens.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 176C09A6C14343ECFF826659 /* Pods_Simple_Animated_Intro_Screens.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +33,9 @@
 		027C0B9723CE70D800600A4C /* SlideLabelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideLabelButton.swift; sourceTree = "<group>"; };
 		028FCDB323CF3177004194DF /* thinking.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = thinking.json; sourceTree = "<group>"; };
 		028FCDB823CF4E8B004194DF /* CVPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVPageCell.swift; sourceTree = "<group>"; };
+		028FCDBA23CF7763004194DF /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		028FCDBC23CF78E3004194DF /* at-office.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "at-office.json"; sourceTree = "<group>"; };
+		028FCDBE23CF7C90004194DF /* success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success.json; sourceTree = "<group>"; };
 		176C09A6C14343ECFF826659 /* Pods_Simple_Animated_Intro_Screens.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simple_Animated_Intro_Screens.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8AA73263B402CD657474CD9 /* Pods-Simple-Animated-Intro-Screens.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple-Animated-Intro-Screens.debug.xcconfig"; path = "Target Support Files/Pods-Simple-Animated-Intro-Screens/Pods-Simple-Animated-Intro-Screens.debug.xcconfig"; sourceTree = "<group>"; };
 		E26994F71E24876FE926DCC1 /* Pods-Simple-Animated-Intro-Screens.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple-Animated-Intro-Screens.release.xcconfig"; path = "Target Support Files/Pods-Simple-Animated-Intro-Screens/Pods-Simple-Animated-Intro-Screens.release.xcconfig"; sourceTree = "<group>"; };
@@ -78,6 +84,7 @@
 				027C0B9123CE687F00600A4C /* Info.plist */,
 				027C0B9723CE70D800600A4C /* SlideLabelButton.swift */,
 				028FCDB823CF4E8B004194DF /* CVPageCell.swift */,
+				028FCDBA23CF7763004194DF /* Page.swift */,
 			);
 			path = "Simple-Animated-Intro-Screens";
 			sourceTree = "<group>";
@@ -86,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				028FCDB323CF3177004194DF /* thinking.json */,
+				028FCDBC23CF78E3004194DF /* at-office.json */,
+				028FCDBE23CF7C90004194DF /* success.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -173,6 +182,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				028FCDBF23CF7C90004194DF /* success.json in Resources */,
+				028FCDBD23CF78E3004194DF /* at-office.json in Resources */,
 				028FCDB423CF3177004194DF /* thinking.json in Resources */,
 				027C0B9023CE687F00600A4C /* LaunchScreen.storyboard in Resources */,
 				027C0B8D23CE687F00600A4C /* Assets.xcassets in Resources */,
@@ -230,6 +241,7 @@
 			files = (
 				027C0B8823CE687B00600A4C /* ViewController.swift in Sources */,
 				027C0B8423CE687B00600A4C /* AppDelegate.swift in Sources */,
+				028FCDBB23CF7763004194DF /* Page.swift in Sources */,
 				027C0B9823CE70D800600A4C /* SlideLabelButton.swift in Sources */,
 				028FCDB923CF4E8B004194DF /* CVPageCell.swift in Sources */,
 				027C0B8623CE687B00600A4C /* SceneDelegate.swift in Sources */,

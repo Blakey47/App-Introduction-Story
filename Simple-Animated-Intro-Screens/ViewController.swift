@@ -28,6 +28,12 @@ class ViewController: UIViewController {
     }()
     
     let cellId = "cellId"
+    let pages: [Page] = {
+        let firstPage = Page(title: "Welcome", message: "Join us on our simple journey of organising all of our daily tasks", animatedImage: "thinking")
+        let secondPage = Page(title: "Get Stuff Done!", message: "A simple idea, yet having a massive impact!", animatedImage: "at-office")
+        let thirdPage = Page(title: "Achieve Success!", message: "Close out those tasks for a better today, and an even better tomorrow!", animatedImage: "success")
+        return [firstPage, secondPage, thirdPage]
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,11 +67,13 @@ class ViewController: UIViewController {
 extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return pages.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! CVPageCell
+        let page = pages[indexPath.item]
+        cell.page = page
         return cell
     }
     

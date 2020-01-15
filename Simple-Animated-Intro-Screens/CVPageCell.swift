@@ -12,15 +12,24 @@ import Lottie
 class CVPageCell: UICollectionViewCell {
     
     var animatedView = AnimationView()
+    let primaryLabel = UILabel()
+    let secondaryLabel = UILabel()
+    let labelView = UIView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         configureAnimatedView(nameOfAnimation: "thinking")
+        configureLabelView()
+        configurePrimaryLabel()
+        configureSecondaryLabel()
     }
     
     init(nameOfAnimation: String) {
         super.init(frame: .zero)
         configureAnimatedView(nameOfAnimation: nameOfAnimation)
+        configureLabelView()
+        configurePrimaryLabel()
+        configureSecondaryLabel()
     }
     
     required init?(coder: NSCoder) {
@@ -37,9 +46,52 @@ class CVPageCell: UICollectionViewCell {
         
         NSLayoutConstraint.activate([
             animatedView.topAnchor.constraint(equalTo: topAnchor, constant: 200),
-            animatedView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 50),
-            animatedView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -50),
-            animatedView.heightAnchor.constraint(equalToConstant: 300)
+            animatedView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
+            animatedView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
+            animatedView.heightAnchor.constraint(equalToConstant: 400)
+        ])
+    }
+    
+    func configureLabelView() {
+        addSubview(labelView)
+        labelView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            labelView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0),
+            labelView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),
+            labelView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0),
+            labelView.heightAnchor.constraint(equalToConstant: 260)
+        ])
+    }
+    
+    func configurePrimaryLabel() {
+        labelView.addSubview(primaryLabel)
+        primaryLabel.text = "Welcome"
+        primaryLabel.textAlignment = .center
+        primaryLabel.font = UIFont.preferredFont(forTextStyle: .headline)
+        primaryLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            primaryLabel.topAnchor.constraint(equalTo: labelView.topAnchor, constant: 40),
+            primaryLabel.leadingAnchor.constraint(equalTo: labelView.leadingAnchor, constant: 20),
+            primaryLabel.trailingAnchor.constraint(equalTo: labelView.trailingAnchor, constant: -20),
+            primaryLabel.heightAnchor.constraint(equalToConstant: 20)
+        ])
+    }
+    
+    func configureSecondaryLabel() {
+        labelView.addSubview(secondaryLabel)
+        secondaryLabel.text = "This is far longer text that simply takes up a lot more of the screen than what is expected"
+        secondaryLabel.font = UIFont.preferredFont(forTextStyle: .subheadline)
+        secondaryLabel.textAlignment = .center
+        secondaryLabel.numberOfLines = 2
+        secondaryLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            secondaryLabel.topAnchor.constraint(equalTo: primaryLabel.bottomAnchor, constant: 20),
+            secondaryLabel.leadingAnchor.constraint(equalTo: labelView.leadingAnchor, constant: 20),
+            secondaryLabel.trailingAnchor.constraint(equalTo: labelView.trailingAnchor, constant: -20),
+            secondaryLabel.heightAnchor.constraint(equalToConstant: 40)
         ])
     }
 }

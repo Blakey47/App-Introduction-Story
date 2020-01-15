@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         layout.scrollDirection = .horizontal
         layout.minimumLineSpacing = 0
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        cv.backgroundColor = .red
+        cv.backgroundColor = .systemBackground
         cv.dataSource = self
         cv.delegate = self
         cv.isPagingEnabled = true
@@ -54,32 +54,6 @@ class ViewController: UIViewController {
 
         
     }
-    
-//    func configureFirstSlideLabel() {
-//        view.addSubview(firstSlideLabel)
-//
-//        NSLayoutConstraint.activate([
-//            firstSlideLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 50),
-//            firstSlideLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
-//            firstSlideLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
-//            firstSlideLabel.heightAnchor.constraint(equalToConstant: 200)
-//        ])
-//    }
-//
-//    func configureFirstAnimatedView() {
-//        view.addSubview(animatedView)
-//        animatedView.contentMode = .scaleAspectFit
-//        animatedView.translatesAutoresizingMaskIntoConstraints = false
-//        animatedView.loopMode = .loop
-//        animatedView.play()
-//
-//        NSLayoutConstraint.activate([
-//            animatedView.topAnchor.constraint(equalTo: firstSlideLabel.bottomAnchor, constant: padding),
-//            animatedView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
-//            animatedView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
-//            animatedView.heightAnchor.constraint(equalToConstant: 400)
-//        ])
-//    }
 
 }
 

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,11 @@
 		027C0B8823CE687B00600A4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C0B8723CE687B00600A4C /* ViewController.swift */; };
 		027C0B8D23CE687F00600A4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 027C0B8C23CE687F00600A4C /* Assets.xcassets */; };
 		027C0B9023CE687F00600A4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 027C0B8E23CE687F00600A4C /* LaunchScreen.storyboard */; };
+		027C0B9823CE70D800600A4C /* SlideLabelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C0B9723CE70D800600A4C /* SlideLabelButton.swift */; };
+		027C0B9A23CE781F00600A4C /* welcome.json in Resources */ = {isa = PBXBuildFile; fileRef = 027C0B9923CE781F00600A4C /* welcome.json */; };
+		027C0B9D23CE790900600A4C /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 027C0B9C23CE790900600A4C /* Lottie */; };
+		028FCDB423CF3177004194DF /* thinking.json in Resources */ = {isa = PBXBuildFile; fileRef = 028FCDB323CF3177004194DF /* thinking.json */; };
+		D44037DA6930A2F274CAD477 /* Pods_Simple_Animated_Intro_Screens.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 176C09A6C14343ECFF826659 /* Pods_Simple_Animated_Intro_Screens.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,12 @@
 		027C0B8C23CE687F00600A4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		027C0B8F23CE687F00600A4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		027C0B9123CE687F00600A4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		027C0B9723CE70D800600A4C /* SlideLabelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideLabelButton.swift; sourceTree = "<group>"; };
+		027C0B9923CE781F00600A4C /* welcome.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = welcome.json; path = ../../../../Downloads/welcome.json; sourceTree = "<group>"; };
+		028FCDB323CF3177004194DF /* thinking.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = thinking.json; sourceTree = "<group>"; };
+		176C09A6C14343ECFF826659 /* Pods_Simple_Animated_Intro_Screens.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simple_Animated_Intro_Screens.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8AA73263B402CD657474CD9 /* Pods-Simple-Animated-Intro-Screens.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple-Animated-Intro-Screens.debug.xcconfig"; path = "Target Support Files/Pods-Simple-Animated-Intro-Screens/Pods-Simple-Animated-Intro-Screens.debug.xcconfig"; sourceTree = "<group>"; };
+		E26994F71E24876FE926DCC1 /* Pods-Simple-Animated-Intro-Screens.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple-Animated-Intro-Screens.release.xcconfig"; path = "Target Support Files/Pods-Simple-Animated-Intro-Screens/Pods-Simple-Animated-Intro-Screens.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D44037DA6930A2F274CAD477 /* Pods_Simple_Animated_Intro_Screens.framework in Frameworks */,
+				027C0B9D23CE790900600A4C /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +53,8 @@
 			children = (
 				027C0B8223CE687B00600A4C /* Simple-Animated-Intro-Screens */,
 				027C0B8123CE687B00600A4C /* Products */,
+				A3B55FE0B3052F987C07B470 /* Pods */,
+				CC6B6B5CE00B6572D406EF3A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +69,34 @@
 		027C0B8223CE687B00600A4C /* Simple-Animated-Intro-Screens */ = {
 			isa = PBXGroup;
 			children = (
+				027C0B9923CE781F00600A4C /* welcome.json */,
+				028FCDB323CF3177004194DF /* thinking.json */,
 				027C0B8323CE687B00600A4C /* AppDelegate.swift */,
 				027C0B8523CE687B00600A4C /* SceneDelegate.swift */,
 				027C0B8723CE687B00600A4C /* ViewController.swift */,
 				027C0B8C23CE687F00600A4C /* Assets.xcassets */,
 				027C0B8E23CE687F00600A4C /* LaunchScreen.storyboard */,
 				027C0B9123CE687F00600A4C /* Info.plist */,
+				027C0B9723CE70D800600A4C /* SlideLabelButton.swift */,
 			);
 			path = "Simple-Animated-Intro-Screens";
+			sourceTree = "<group>";
+		};
+		A3B55FE0B3052F987C07B470 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8AA73263B402CD657474CD9 /* Pods-Simple-Animated-Intro-Screens.debug.xcconfig */,
+				E26994F71E24876FE926DCC1 /* Pods-Simple-Animated-Intro-Screens.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CC6B6B5CE00B6572D406EF3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				176C09A6C14343ECFF826659 /* Pods_Simple_Animated_Intro_Screens.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,15 +106,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 027C0B9423CE687F00600A4C /* Build configuration list for PBXNativeTarget "Simple-Animated-Intro-Screens" */;
 			buildPhases = (
+				EDA3AB44502551C535E6C517 /* [CP] Check Pods Manifest.lock */,
 				027C0B7C23CE687B00600A4C /* Sources */,
 				027C0B7D23CE687B00600A4C /* Frameworks */,
 				027C0B7E23CE687B00600A4C /* Resources */,
+				273570159A5ADC156F2EF5CA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Simple-Animated-Intro-Screens";
+			packageProductDependencies = (
+				027C0B9C23CE790900600A4C /* Lottie */,
+			);
 			productName = "Simple-Animated-Intro-Screens";
 			productReference = 027C0B8023CE687B00600A4C /* Simple-Animated-Intro-Screens.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +148,9 @@
 				Base,
 			);
 			mainGroup = 027C0B7723CE687B00600A4C;
+			packageReferences = (
+				027C0B9B23CE790900600A4C /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 027C0B8123CE687B00600A4C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -122,12 +165,56 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				027C0B9A23CE781F00600A4C /* welcome.json in Resources */,
+				028FCDB423CF3177004194DF /* thinking.json in Resources */,
 				027C0B9023CE687F00600A4C /* LaunchScreen.storyboard in Resources */,
 				027C0B8D23CE687F00600A4C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		273570159A5ADC156F2EF5CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Simple-Animated-Intro-Screens/Pods-Simple-Animated-Intro-Screens-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Simple-Animated-Intro-Screens/Pods-Simple-Animated-Intro-Screens-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Simple-Animated-Intro-Screens/Pods-Simple-Animated-Intro-Screens-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDA3AB44502551C535E6C517 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Simple-Animated-Intro-Screens-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		027C0B7C23CE687B00600A4C /* Sources */ = {
@@ -136,6 +223,7 @@
 			files = (
 				027C0B8823CE687B00600A4C /* ViewController.swift in Sources */,
 				027C0B8423CE687B00600A4C /* AppDelegate.swift in Sources */,
+				027C0B9823CE70D800600A4C /* SlideLabelButton.swift in Sources */,
 				027C0B8623CE687B00600A4C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +358,7 @@
 		};
 		027C0B9523CE687F00600A4C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8AA73263B402CD657474CD9 /* Pods-Simple-Animated-Intro-Screens.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -288,6 +377,7 @@
 		};
 		027C0B9623CE687F00600A4C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E26994F71E24876FE926DCC1 /* Pods-Simple-Animated-Intro-Screens.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -326,6 +416,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		027C0B9B23CE790900600A4C /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		027C0B9C23CE790900600A4C /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 027C0B9B23CE790900600A4C /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 027C0B7823CE687B00600A4C /* Project object */;
 }

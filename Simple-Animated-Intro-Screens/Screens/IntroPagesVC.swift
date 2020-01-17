@@ -11,8 +11,11 @@ import Lottie
 
 class IntroPagesVC: UIViewController {
     
+    
     var padding: CGFloat = 20
     let cellId = "cellId"
+    let loginCellId = "loginCellId"
+    
     
     
     // MARK: Components
@@ -59,19 +62,21 @@ class IntroPagesVC: UIViewController {
     }()
     
     
+    
     // MARK: ViewDidLoad
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         configure()
-        collectionView.register(CVPageCell.self, forCellWithReuseIdentifier: cellId)
     }
+    
     
     
     // MARK: Functions
 
     func configure() {
+        registerCells()
         configureCollectionView()
         configurePageController()
         configureSkipButton()
@@ -124,6 +129,11 @@ class IntroPagesVC: UIViewController {
             nextButton.heightAnchor.constraint(equalToConstant: 50),
             nextButton.widthAnchor.constraint(equalToConstant: 50)
         ])
+    }
+    
+    private func registerCells() {
+        collectionView.register(CVPageCell.self, forCellWithReuseIdentifier: cellId)
+        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: loginCellId)
     }
 
 }

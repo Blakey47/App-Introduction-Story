@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		027C0B8423CE687B00600A4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C0B8323CE687B00600A4C /* AppDelegate.swift */; };
 		027C0B8623CE687B00600A4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C0B8523CE687B00600A4C /* SceneDelegate.swift */; };
-		027C0B8823CE687B00600A4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C0B8723CE687B00600A4C /* ViewController.swift */; };
+		027C0B8823CE687B00600A4C /* IntroPagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C0B8723CE687B00600A4C /* IntroPagesVC.swift */; };
 		027C0B8D23CE687F00600A4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 027C0B8C23CE687F00600A4C /* Assets.xcassets */; };
 		027C0B9023CE687F00600A4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 027C0B8E23CE687F00600A4C /* LaunchScreen.storyboard */; };
 		027C0B9823CE70D800600A4C /* SlideLabelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C0B9723CE70D800600A4C /* SlideLabelButton.swift */; };
@@ -19,6 +19,7 @@
 		028FCDBB23CF7763004194DF /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028FCDBA23CF7763004194DF /* Page.swift */; };
 		028FCDBD23CF78E3004194DF /* at-office.json in Resources */ = {isa = PBXBuildFile; fileRef = 028FCDBC23CF78E3004194DF /* at-office.json */; };
 		028FCDBF23CF7C90004194DF /* success.json in Resources */ = {isa = PBXBuildFile; fileRef = 028FCDBE23CF7C90004194DF /* success.json */; };
+		028FCDC123CF8573004194DF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028FCDC023CF8573004194DF /* Extensions.swift */; };
 		D44037DA6930A2F274CAD477 /* Pods_Simple_Animated_Intro_Screens.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 176C09A6C14343ECFF826659 /* Pods_Simple_Animated_Intro_Screens.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +27,7 @@
 		027C0B8023CE687B00600A4C /* Simple-Animated-Intro-Screens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple-Animated-Intro-Screens.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		027C0B8323CE687B00600A4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		027C0B8523CE687B00600A4C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		027C0B8723CE687B00600A4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		027C0B8723CE687B00600A4C /* IntroPagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroPagesVC.swift; sourceTree = "<group>"; };
 		027C0B8C23CE687F00600A4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		027C0B8F23CE687F00600A4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		027C0B9123CE687F00600A4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +37,7 @@
 		028FCDBA23CF7763004194DF /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		028FCDBC23CF78E3004194DF /* at-office.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "at-office.json"; sourceTree = "<group>"; };
 		028FCDBE23CF7C90004194DF /* success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success.json; sourceTree = "<group>"; };
+		028FCDC023CF8573004194DF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		176C09A6C14343ECFF826659 /* Pods_Simple_Animated_Intro_Screens.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simple_Animated_Intro_Screens.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8AA73263B402CD657474CD9 /* Pods-Simple-Animated-Intro-Screens.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple-Animated-Intro-Screens.debug.xcconfig"; path = "Target Support Files/Pods-Simple-Animated-Intro-Screens/Pods-Simple-Animated-Intro-Screens.debug.xcconfig"; sourceTree = "<group>"; };
 		E26994F71E24876FE926DCC1 /* Pods-Simple-Animated-Intro-Screens.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple-Animated-Intro-Screens.release.xcconfig"; path = "Target Support Files/Pods-Simple-Animated-Intro-Screens/Pods-Simple-Animated-Intro-Screens.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,16 +77,12 @@
 		027C0B8223CE687B00600A4C /* Simple-Animated-Intro-Screens */ = {
 			isa = PBXGroup;
 			children = (
+				028FCDCB23D24A7E004194DF /* Support */,
+				028FCDC823D249BE004194DF /* Screens */,
+				028FCDC623D2495D004194DF /* CustomViews */,
+				028FCDC523D2493D004194DF /* Model */,
+				028FCDC423D2492F004194DF /* Extensions */,
 				028FCDB523CF3D62004194DF /* JSON */,
-				027C0B8323CE687B00600A4C /* AppDelegate.swift */,
-				027C0B8523CE687B00600A4C /* SceneDelegate.swift */,
-				027C0B8723CE687B00600A4C /* ViewController.swift */,
-				027C0B8C23CE687F00600A4C /* Assets.xcassets */,
-				027C0B8E23CE687F00600A4C /* LaunchScreen.storyboard */,
-				027C0B9123CE687F00600A4C /* Info.plist */,
-				027C0B9723CE70D800600A4C /* SlideLabelButton.swift */,
-				028FCDB823CF4E8B004194DF /* CVPageCell.swift */,
-				028FCDBA23CF7763004194DF /* Page.swift */,
 			);
 			path = "Simple-Animated-Intro-Screens";
 			sourceTree = "<group>";
@@ -97,6 +95,67 @@
 				028FCDBE23CF7C90004194DF /* success.json */,
 			);
 			path = JSON;
+			sourceTree = "<group>";
+		};
+		028FCDC423D2492F004194DF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				028FCDC023CF8573004194DF /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		028FCDC523D2493D004194DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				028FCDBA23CF7763004194DF /* Page.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		028FCDC623D2495D004194DF /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				028FCDC923D249D2004194DF /* Cells */,
+				028FCDC723D24966004194DF /* Labels */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		028FCDC723D24966004194DF /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				027C0B9723CE70D800600A4C /* SlideLabelButton.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		028FCDC823D249BE004194DF /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				027C0B8723CE687B00600A4C /* IntroPagesVC.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		028FCDC923D249D2004194DF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				028FCDB823CF4E8B004194DF /* CVPageCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		028FCDCB23D24A7E004194DF /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				027C0B8323CE687B00600A4C /* AppDelegate.swift */,
+				027C0B8523CE687B00600A4C /* SceneDelegate.swift */,
+				027C0B8C23CE687F00600A4C /* Assets.xcassets */,
+				027C0B8E23CE687F00600A4C /* LaunchScreen.storyboard */,
+				027C0B9123CE687F00600A4C /* Info.plist */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 		A3B55FE0B3052F987C07B470 /* Pods */ = {
@@ -239,12 +298,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				027C0B8823CE687B00600A4C /* ViewController.swift in Sources */,
+				027C0B8823CE687B00600A4C /* IntroPagesVC.swift in Sources */,
 				027C0B8423CE687B00600A4C /* AppDelegate.swift in Sources */,
 				028FCDBB23CF7763004194DF /* Page.swift in Sources */,
 				027C0B9823CE70D800600A4C /* SlideLabelButton.swift in Sources */,
 				028FCDB923CF4E8B004194DF /* CVPageCell.swift in Sources */,
 				027C0B8623CE687B00600A4C /* SceneDelegate.swift in Sources */,
+				028FCDC123CF8573004194DF /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,7 +443,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SKFTH2J54U;
-				INFOPLIST_FILE = "Simple-Animated-Intro-Screens/Info.plist";
+				INFOPLIST_FILE = "Simple-Animated-Intro-Screens/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -402,7 +462,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SKFTH2J54U;
-				INFOPLIST_FILE = "Simple-Animated-Intro-Screens/Info.plist";
+				INFOPLIST_FILE = "Simple-Animated-Intro-Screens/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

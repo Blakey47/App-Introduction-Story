@@ -67,9 +67,9 @@ class CVPageCell: UICollectionViewCell {
     
     func configurePrimaryLabel() {
         labelView.addSubview(primaryLabel)
-        primaryLabel.text = "Welcome"
         primaryLabel.textAlignment = .center
-        primaryLabel.font = UIFont.preferredFont(forTextStyle: .headline)
+        primaryLabel.font = UIFont.systemFont(ofSize: 20, weight: .medium)
+//        primaryLabel.font = UIFont.preferredFont(forTextStyle: .headline)
         primaryLabel.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
@@ -82,7 +82,6 @@ class CVPageCell: UICollectionViewCell {
     
     func configureSecondaryLabel() {
         labelView.addSubview(secondaryLabel)
-        secondaryLabel.text = "This is far longer text that simply takes up a lot more of the screen than what is expected"
         secondaryLabel.font = UIFont.preferredFont(forTextStyle: .subheadline)
         secondaryLabel.textAlignment = .center
         secondaryLabel.numberOfLines = 2

@@ -137,8 +137,23 @@ class IntroPagesVC: UIViewController {
     }
     
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        
         let pageNumber = Int(targetContentOffset.pointee.x / view.frame.width)
         pageControl.currentPage = pageNumber
+        
+        if pageNumber == pages.count {
+            UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: {
+                self.pageControl.transform = CGAffineTransform(translationX: 0, y: 60)
+                self.nextButton.transform = CGAffineTransform(translationX: 0, y: -80)
+                self.skipButton.transform = CGAffineTransform(translationX: 0, y: -80)
+            }, completion: nil)
+        } else {
+            UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseIn, animations: {
+                self.pageControl.transform = .identity
+                self.nextButton.transform = .identity
+                self.skipButton.transform = .identity
+            }, completion: nil)
+        }
     }
 
 }

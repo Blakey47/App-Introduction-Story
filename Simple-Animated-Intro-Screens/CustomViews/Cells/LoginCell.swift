@@ -51,9 +51,9 @@ class LoginCell: UICollectionViewCell {
     
     func configureFirstNameTextField() {
         addSubview(firstNameTF)
-        firstNameTF.placeholder = "Enter First Name"
+        firstNameTF.placeholder = " Enter First Name"
         firstNameTF.layer.borderColor = UIColor.lightGray.cgColor
-        firstNameTF.layer.borderWidth = 2
+        firstNameTF.layer.borderWidth = 1
         firstNameTF.layer.cornerRadius = 5
         firstNameTF.translatesAutoresizingMaskIntoConstraints = false
         
@@ -67,9 +67,9 @@ class LoginCell: UICollectionViewCell {
     
     func configureLastNameTextField() {
         addSubview(lastNameTF)
-        lastNameTF.placeholder = "Enter Last Name"
+        lastNameTF.placeholder = " Enter Last Name"
         lastNameTF.layer.borderColor = UIColor.lightGray.cgColor
-        lastNameTF.layer.borderWidth = 2
+        lastNameTF.layer.borderWidth = 1
         lastNameTF.layer.cornerRadius = 5
         lastNameTF.translatesAutoresizingMaskIntoConstraints = false
         

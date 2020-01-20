@@ -51,13 +51,15 @@ class IntroPagesVC: UIViewController {
         let button = UIButton(type: .system)
         button.setTitle("Skip", for: .normal)
         button.setTitleColor(.systemRed, for: .normal)
+        button.addTarget(self, action: #selector(skipPage), for: .touchUpInside)
         return button
     }()
     
-    let nextButton: UIButton = {
+    lazy var nextButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Next", for: .normal)
         button.setTitleColor(.systemRed, for: .normal)
+        button.addTarget(self, action: #selector(nextPage), for: .touchUpInside)
         return button
     }()
     
@@ -136,6 +138,36 @@ class IntroPagesVC: UIViewController {
         ])
     }
     
+    @objc func nextPage() {
+        if pageControl.currentPage == pages.count {
+            return
+        } else if pageControl.currentPage == (pages.count - 1) {
+            animateUIComponentsOffScreen()
+        }
+        
+        let indexPath = IndexPath(item: pageControl.currentPage + 1, section: 0)
+        collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+        pageControl.currentPage += 1
+    }
+    
+    @objc func skipPage() {
+        let indexPath = IndexPath(item: pages.count, section: 0)
+        collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+        animateUIComponentsOffScreen()
+    }
+    
+    func animateUIComponentsOffScreen(){
+        UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: {
+            self.pageControl.transform = CGAffineTransform(translationX: 0, y: 60)
+            self.nextButton.transform = CGAffineTransform(translationX: 0, y: -80)
+            self.skipButton.transform = CGAffineTransform(translationX: 0, y: -80)
+        }, completion: nil)
+    }
+    
+    
+    
+    // MARK: ScrollView
+    
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         
         let pageNumber = Int(targetContentOffset.pointee.x / view.frame.width)
@@ -154,6 +186,10 @@ class IntroPagesVC: UIViewController {
                 self.skipButton.transform = .identity
             }, completion: nil)
         }
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        view.endEditing(true)
     }
 
 }

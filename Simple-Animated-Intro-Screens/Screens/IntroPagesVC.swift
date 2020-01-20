@@ -74,6 +74,11 @@ class IntroPagesVC: UIViewController {
     
     
     // MARK: Functions
+    
+    private func registerCells() {
+        collectionView.register(CVPageCell.self, forCellWithReuseIdentifier: cellId)
+        collectionView.register(LoginCell.self, forCellWithReuseIdentifier: loginCellId)
+    }
 
     func configure() {
         registerCells()
@@ -129,11 +134,6 @@ class IntroPagesVC: UIViewController {
             nextButton.heightAnchor.constraint(equalToConstant: 50),
             nextButton.widthAnchor.constraint(equalToConstant: 50)
         ])
-    }
-    
-    private func registerCells() {
-        collectionView.register(CVPageCell.self, forCellWithReuseIdentifier: cellId)
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: loginCellId)
     }
     
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {

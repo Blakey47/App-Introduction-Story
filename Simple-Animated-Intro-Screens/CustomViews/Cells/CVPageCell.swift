@@ -46,7 +46,7 @@ class CVPageCell: UICollectionViewCell {
         animatedView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            animatedView.topAnchor.constraint(equalTo: topAnchor, constant: 200),
+            animatedView.bottomAnchor.constraint(equalTo: labelView.topAnchor, constant: -30),
             animatedView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             animatedView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
             animatedView.heightAnchor.constraint(equalToConstant: 400)
@@ -68,7 +68,7 @@ class CVPageCell: UICollectionViewCell {
     func configurePrimaryLabel() {
         labelView.addSubview(primaryLabel)
         primaryLabel.textAlignment = .center
-        primaryLabel.font = UIFont.systemFont(ofSize: 20, weight: .medium)
+        primaryLabel.font = UIFont.systemFont(ofSize: 33, weight: .medium)
 //        primaryLabel.font = UIFont.preferredFont(forTextStyle: .headline)
         primaryLabel.translatesAutoresizingMaskIntoConstraints = false
         
@@ -76,7 +76,7 @@ class CVPageCell: UICollectionViewCell {
             primaryLabel.topAnchor.constraint(equalTo: labelView.topAnchor, constant: 40),
             primaryLabel.leadingAnchor.constraint(equalTo: labelView.leadingAnchor, constant: 20),
             primaryLabel.trailingAnchor.constraint(equalTo: labelView.trailingAnchor, constant: -20),
-            primaryLabel.heightAnchor.constraint(equalToConstant: 20)
+            primaryLabel.heightAnchor.constraint(equalToConstant: 40)
         ])
     }
     
